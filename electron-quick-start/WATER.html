@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <base target="_parent">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.7.5/css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+        <style>
+            .dropdown-submenu {
+                position: relative;
+            }
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: 1px;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu>a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-left-color: #000000;
+                margin-top: 5px;
+                margin-right: 10px;
+            }
+
+            .dropdown-submenu.pull-left {
+                float: none;
+            }
+
+            .dropdown-submenu.pull-left>.dropdown-menu {
+                left: 100%;
+                margin-left: 10px;                             
+            }
+
+            .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+                background-image:none !important;
+            }
+            .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {                
+                color:white;
+                background-color:#4285F4;
+                transition: all .2s ease-in-out;
+                transform: scale(1.1);
+                box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+            }
+            
+            .div-shadow {            
+                box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+            }
+            .nav-link {
+                font-size: .75em;
+                font-weight: bold;
+            }
+            .dropdown-item{
+                font-size: .75em;
+            }
+            
+        </style>
+        
+    </head>
+    <body >
+        <div class="container-fluid">
+        
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light py-0">
+            
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto p-0">
+                    
+                    <li class="nav-item dropdown multi-level-dropdown">
+                        <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle border-0" aria-expanded="true">Reports</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li class="dropdown-item dropdown dropdown-submenu p-0">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle w-100 waves-effect waves-light shadow-lg div-shadow py-0">Performance</a>
+                                <ul class="dropdown-menu ml-2 rounded-0 border-0 z-depth-1">
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Daily Summary Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Detailed Performance View</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Summary View</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-item dropdown dropdown-submenu p-0">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle w-100 waves-effect waves-light shadow-lg div-shadow py-0">SmokeTest</a>
+                                <ul class="dropdown-menu ml-2 rounded-0 border-0 z-depth-1">
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Daily Functional Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Daily Summary Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0 ">
+                                        <a href="#" class="w-100 waves-effect waves-light py-0">Detailed SmokeTest View</a>
+                                    </li>
+                                    <!-- 
+                                        <li class="dropdown-item dropdown-submenu p-0">
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100 waves-effect waves-light">Detailed SmokeTest View</a>
+                                            <ul class="dropdown-menu mr-2 rounded-0 primary-color border-0 z-depth-1 r-100">
+                                            <li class="dropdown-item p-0">
+                                                <a href="#" class="text-white w-100 waves-effect waves-light">Some</a>
+                                            </li>
+                                            <li class="dropdown-item p-0">
+                                                <a href="#" class="text-white w-100 waves-effect waves-light">Text</a>
+                                            </li>
+                                            </ul>
+                                        </li>
+                                    -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown multi-level-dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">Reports</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  waves-effect waves-light" href="#">Performance</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="waves-effect waves-light">Daily Summary Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="waves-effect waves-light">Daily Performance View</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="waves-effect waves-light">Summary View</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  waves-effect waves-light" href="#">SmokeTest</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light">Daily Functional Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light">Daily Summary Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-item p-0">
+                                        <a href="#" class="w-100 waves-effect waves-light">Detailed SmokeTest View</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Schedules</a>
+                        <ul class="dropdown-menu default">
+                            <li><a class="dropdown-item py-0" href="#">Performance Adhoc Request</a></li>
+                            <li><a class="dropdown-item py-0" href="#">SmokeTest Adhoc Request</a></li>
+                            <li><a class="dropdown-item py-0" href="#">Schedule Config</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Administration</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-0" href="#">Node</a></li>
+                            <li><a class="dropdown-item py-0" href="#">Environment</a></li>
+                            <li><a class="dropdown-item py-0" href="#">App Group</a></li>
+                            <li><a class="dropdown-item py-0" href="#">Applications</a></li>
+                            <li><a class="dropdown-item py-0" href="#">App Test Scenario</a></li>
+                            
+                        </ul>
+                    </li>
+                   
+                    
+                </ul>
+                
+                <ul class="nav navbar-nav align-middle ml-auto py-0" id = "QMC-Datasheet-Link">
+                    <li>
+                        <a class="btn btn-primary btn-sm font-weight-bold div-shadow" href="#" target="_blank" role="button">QMC Health Check Data Analysis</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collapsible content -->
+            </nav>
+
+            
+        
+        </div>  
+    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.7.5/js/mdb.min.js"></script>
+        <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script>
+        <script type="text/javascript">
+
+            $('.multi-level-dropdown .dropdown-submenu > a').on("mouseenter", function(e) {
+                var submenu = $(this);
+                $('.multi-level-dropdown .dropdown-submenu .dropdown-menu').removeClass('show');
+                submenu.next('.dropdown-menu').addClass('show');
+                e.stopPropagation();
+            });
+
+            $('.multi-level-dropdown .dropdown').on("hidden.bs.dropdown", function() {
+                // hide any open menus when parent closes
+                $('.multi-level-dropdown .dropdown-menu.show').removeClass('show');
+            });
+            
+            
+        </script>
+    </body>
+</html>
